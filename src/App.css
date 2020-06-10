@@ -2,8 +2,9 @@
 header {
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    align-items: center;
     margin: 10px;
+    font-size: 1em;    
     background-color: blueviolet;
     color: whitesmoke;
 }
