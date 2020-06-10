@@ -1,3 +1,3 @@
 # React-App Meme Generator
 
-(https://app-memegenerator.netlify.app/)
+https://app-memegenerator.netlify.app/
