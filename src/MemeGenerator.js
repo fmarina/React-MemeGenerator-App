@@ -2,7 +2,12 @@ import React, {Component} from 'react';
 
 class MemeGenerator extends Component {
     constructor() {
-        super();        
+        super();  
+        this.state = {
+            topText    : "",
+            bottomText : "",
+            randomImg  : ""
+        };
     }
 
     render() {
