@@ -39,7 +39,6 @@ header img{
     color: whitesmoke;
     border: 1px solid transparent;
     border-radius: 10%;
-    outline: transparent;
 }
 
 .meme-form button:hover {
@@ -68,11 +67,11 @@ header img{
 .display-meme .top {
     position: absolute;
     top: -40px;
-    left: 10PX;
+    left: 1px;
 }
 
 .display-meme .bottom {
     position: absolute;
     bottom: -10px;
-    left: 10PX;
+    left: 1px;
 }

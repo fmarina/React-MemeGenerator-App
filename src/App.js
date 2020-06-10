@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import MemeGenerator from './MemeGenerator';
+import MemeGenerator from './MemeGeneratorContainer';
 
 function App() {
   return (
