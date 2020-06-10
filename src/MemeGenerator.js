@@ -9,6 +9,7 @@ class MemeGenerator extends Component {
             randomImg  : "",
             allMemes   : []
         };
+        this.handleChange = this.handleChange.bind(this);
     }
 
     componentDidMount() {
@@ -18,6 +19,13 @@ class MemeGenerator extends Component {
             const {memes} = response.data;
             this.setState({ allMemes : memes});
         });        
+    }
+
+    handleChange(event) {
+        const {name, value} = event.target;
+        this.setState({
+            [name] : value
+        });
     }
 
     render() {
@@ -42,8 +50,14 @@ class MemeGenerator extends Component {
                             onChange={this.handleChange}
                         />
                     </label>
-
+                    <button>Gen</button>
                 </form>
+                <div className="display-meme">
+                    <img src={this.state.randomImg} alt="meme" />
+                    <h2 className="top">{this.state.topText}</h2>
+                    <h2 className="bottom">{this.state.bottomText}</h2>
+
+                </div>
 
             </div>
         );
