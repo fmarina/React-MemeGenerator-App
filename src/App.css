@@ -1,9 +1,8 @@
-
 header {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
     font-size: 1em;    
     background-color: blueviolet;
     color: whitesmoke;
@@ -13,4 +12,67 @@ header img{
     width: 100px;
     height: 100px;
     padding: 10px 30px;
+}
+
+.meme-generator-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.meme-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; 
+}
+
+.meme-form input {
+    height: 20px;
+    margin: 5px 10px;     
+    outline-color: cornflowerblue; 
+}
+
+.meme-form button {
+    background-color: blueviolet;
+    padding: 5px 10px;    
+    color: whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    outline: transparent;
+}
+
+.meme-form button:hover {
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.display-meme {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    -webkit-text-stroke: 2px black;
+    color: white;  
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;          
+    letter-spacing: 1px;    
+}
+
+.display-meme img {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.display-meme .top {
+    position: absolute;
+    top: -40px;
+    left: 10PX;
+}
+
+.display-meme .bottom {
+    position: absolute;
+    bottom: -10px;
+    left: 10PX;
 }
