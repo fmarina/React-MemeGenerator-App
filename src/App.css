@@ -71,12 +71,12 @@ header img{
 
 .display-meme .top {
     position: absolute;
-    top: -40px;
-    left: 1px;
+    top: -35px;
+    left: 10px;
 }
 
 .display-meme .bottom {
     position: absolute;
     bottom: -10px;
-    left: 1px;
+    left: 10px;
 }
