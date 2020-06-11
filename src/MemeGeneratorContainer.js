@@ -10,11 +10,9 @@ class MemeGenerator extends Component {
             randomImg  : "https://i.imgflip.com/26br.jpg",
             allMemes   : []
         };
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    componentDidMount() {
+    componentDidMount = () => {
         fetch("https://api.imgflip.com/get_memes")
         .then(response => response.json())
         .then(response => {
@@ -23,14 +21,14 @@ class MemeGenerator extends Component {
         });        
     }
 
-    handleChange(event) {
+    handleChange = (event) => {
         const {name, value} = event.target;
         this.setState({
             [name] : value
         });
     }
 
-    handleSubmit(event) {
+    handleSubmit = (event) => {
         event.preventDefault();
         const totalMemes = this.state.allMemes.length;
         const randomImg = Math.floor(Math.random() * totalMemes);
